@@ -1,0 +1,21 @@
+﻿@inherits LayoutComponentBase
+
+@using Blazored.Toast
+@using Blazored.Toast.Configuration
+
+<BlazoredToasts Position="ToastPosition.BottomRight" Timeout="15" />
+
+<div class="sidebar">
+    <NavMenu />
+</div>
+
+<div class="main">
+    <div class="top-row px-4">
+        <SignIn />
+        <a href="https://www.actionstep.com" target="_blank">Actionstep</a>
+    </div>
+
+    <div class="content px-4">
+        @Body
+    </div>
+</div>
